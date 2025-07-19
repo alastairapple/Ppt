@@ -1,7 +1,7 @@
 export const FORMULA_LIST = [
   {
     label: 'Gaussian formula',
-    latex: `\\int\\int\\int _ { \\Omega } \\left( \\frac { \\partial {P} } { \\partial {x} } + \\frac { \\partial {Q} } { \\partial {y} } + \\frac { \\partial {R} }{ \\partial {z} } \\right) \\mathrm { d } V = \\oint _ { \\partial \\Omega } ( P \\cos \\alpha + Q \\cos \\beta + R \\cos \\gamma ) \\mathrm{ d} S`
+    latex: `\\int\\int\\int _ { \\Omega } \\left( \\frac { \\partial {P} } { \\partial {x} } + \\frac { \\partial {Q} } { \\partial {y} } + \\frac { \\partial {R} }{ \\partial {z} } \\right) \\mathrm { d } V = \\oint _ { \\partial \\Omega } ( P \\cos \\alpha + Q \\cos \\beta + R \\cos \\gamma ) \\mathrm{ d} S`,
   },
   {
     label: 'Fourier series',
@@ -28,7 +28,7 @@ export const FORMULA_LIST = [
     latex: `( 1 + x ) ^ { n } = 1 + \\frac { n x } { 1 ! } + \\frac { n ( n - 1 ) x ^ { 2 } } { 2 ! } + ...`,
   },
   {
-    label: 'Euler\'s formula',
+    label: "Euler's formula",
     latex: ` e^{ix} = \\cos {x} + i\\sin {x}`,
   },
   {
@@ -44,11 +44,11 @@ export const FORMULA_LIST = [
     latex: `y = (\\int Q(x) e^{\\int {P(x)dx}}dx + C)e^{-\\int {P(x)dx}}`,
   },
   {
-    label: 'Cauchy's mean theorem',
+    label: "Cauchy's mean theorem",
     latex: `\\frac{{f(b) - f(a)}}{{F(b) - F(a)}} = \\frac{{f'(\\xi )}}{{F'(\\xi )}}`,
   },
   {
-    label: 'Lagrange's mean theorem',
+    label: "Lagrange's mean theorem",
     latex: `f(b) - f(a) = f'(\\xi )(b - a)`,
   },
   {

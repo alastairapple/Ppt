@@ -1,4 +1,4 @@
-Template
+<template>
   <div 
     class="editable-element-text" 
     :class="{ 'lock': elementInfo.lock }"
@@ -57,8 +57,9 @@ Template
       </div>
     </div>
   </div>
+</template>
 
-Script
+<script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch, useTemplateRef } from 'vue'
 import { storeToRefs } from 'pinia'
 import { debounce } from 'lodash'
@@ -174,8 +175,9 @@ const isHandleElement = computed(() => handleElementId.value === props.elementIn
 watch(isHandleElement, () => {
   if (!isHandleElement.value) checkEmptyText()
 })
+</script>
 
-Styles
+<style lang="scss" scoped>
 .editable-element-text {
   position: absolute;
 
@@ -215,3 +217,4 @@ Styles
     bottom: 0;
   }
 }
+</style>
