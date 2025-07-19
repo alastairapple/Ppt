@@ -263,7 +263,7 @@ const deleteRow = (rowIndex: number) => {
 
 // Delete a column
 const deleteCol = (colIndex: number) => {
-  const _tableCells: TableCell[][] = JSON.JSON.parse(JSON.stringify(tableCells.value))
+  const _tableCells: TableCell[][] = JSON.parse(JSON.stringify(tableCells.value))
 
   const hideCellsPos = []
   for (let i = 0; i < tableCells.value.length; i++) {

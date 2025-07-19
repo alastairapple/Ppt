@@ -183,6 +183,7 @@ watch(() => handleElementId.value, () => {
 
 const hoverPreviewAnimation = ref('')
 const animationPoolVisible = ref(false)
+const animateIn = ref(false)
 
 const { addHistorySnapshot } = useHistorySnapshot()
 

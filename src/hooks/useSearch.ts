@@ -34,7 +34,7 @@ export default () => {
   const modifiers = ref<Modifiers>('g')
   
   const search = () => {
-    const textList: SearchResultType[] = []
+    const textList: SearchResult[] = []
     const matchRegex = new RegExp(searchWord.value, modifiers.value)
     const textRegex = /(<([^>]+)>)/g
   

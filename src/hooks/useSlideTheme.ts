@@ -285,14 +285,14 @@ export default () => {
         if (el.text) {
           el.text.defaultColor = theme.fontColor
           el.text.defaultFontName = theme.fontname
-          if(el.text.content) el.text.content = el.text.content.replace(/color: .+?;/g, '').replace(/font-family: .+?;/g, '')
+          if (el.text.content) el.text.content = el.text.content.replace(/color: .+?;/g, '').replace(/font-family: .+?;/g, '')
         }
       }
       if (el.type === 'text') {
         if (el.fill) el.fill = getColor(el.fill)
         el.defaultColor = theme.fontColor
         el.defaultFontName = theme.fontname
-        if(el.content) el.content = el.content.replace(/color: .+?;/g, '').replace(/font-family: .+?;/g, '')
+        if (el.content) el.content = el.content.replace(/color: .+?;/g, '').replace(/font-family: .+?;/g, '')
       }
       if (el.type === 'image' && el.colorMask) {
         el.colorMask = getColor(el.colorMask)

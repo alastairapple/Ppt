@@ -10,7 +10,7 @@
 
     <div class="row">
       <div style="width: 40%;">Line spacing:</div>
-      <Select style="width: 60%;" :value="lineHeight || 1" @update:value="value => updateLineHeight(value as number)">
+      <Select style="width: 60%;" :value="lineHeight || 1" :options="lineHeightOptions" @update:value="value => updateLineHeight(value as number)">
         <template #icon>
           <IconRowHeight />
         </template>
@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div style="width: 40%;">Paragraph spacing:</div>
-      <Select style="width: 60%;" :value="paragraphSpace || 0" @update:value="value => updateParagraphSpace(value as number)">
+      <Select style="width: 60%;" :value="paragraphSpace || 0" :options="paragraphSpaceOptions" @update:value="value => updateParagraphSpace(value as number)">
         <template #icon>
           <IconVerticalSpacingBetweenItems />
         </template>
@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <div style="width: 40%;">Letter spacing:</div>
-      <Select style="width: 60%;" :value="wordSpace || 0" @update:value="value => updateWordSpace(value as number)">
+      <Select style="width: 60%;" :value="wordSpace || 0" :options="wordSpaceOptions" @update:value="value => updateWordSpace(value as number)">
         <template #icon>
           <IconFullwidth />
         </template>
@@ -170,9 +170,9 @@ watch(handleElement, () => {
   emitter.emit(EmitterEvents.SYNC_RICH_TEXT_ATTRS_TO_STORE)
 }, { deep: true, immediate: true })
 
-const lineHeightOptions = [0.9, 1.0, 1.15, 1.2, 1.4, 1.5, 1.8, 2.0, 2.5, 3.0]
-const wordSpaceOptions = [0, 1, 2, 3, 4, 5, 6, 8, 10]
-const paragraphSpaceOptions = [0, 5, 10, 15, 20, 25, 30, 40, 50, 80]
+const lineHeightOptions = [0.9, 1.0, 1.15, 1.2, 1.4, 1.5, 1.8, 2.0, 2.5, 3.0].map(val => ({ label: `${val}`, value: val }))
+const wordSpaceOptions = [0, 1, 2, 3, 4, 5, 6, 8, 10].map(val => ({ label: `${val}`, value: val }))
+const paragraphSpaceOptions = [0, 5, 10, 15, 20, 25, 30, 40, 50, 80].map(val => ({ label: `${val}`, value: val }))
 
 // Set line height
 const updateLineHeight = (value: number) => {
