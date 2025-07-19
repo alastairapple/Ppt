@@ -1,8 +1,7 @@
 name: deploy
 
 on:
-  push:
-    branches: [Pptist]
+  workflow_dispatch:
 
 jobs:
   deploy:
