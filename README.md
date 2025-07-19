@@ -11,24 +11,22 @@
     <a href="https://gitee.com/pptist/PPTist" target="_black"><img src="https://gitee.com/pptist/PPTist/badge/star.svg?version=latest" alt="gitee"></a>
 </p>
 
-[简体中文](README_zh.md) | English
-
+[Simplified Chinese](README_zh.md) | English
 
 # 🎨 PPTist
-> PowerPoint-ist（/'pauəpɔintist/）, A web-based presentation (slideshow) application. This application replicates most of the commonly used features of Microsoft Office PowerPoint. It supports various essential element types such as text, images, shapes, lines, charts, tables, videos, audio, and formulas. You can edit and present slides directly in a web browser.
+> PowerPoint-ist (`/'pauəpɔintist/`), a web-based presentation (slideshow) application. This application replicates most of the commonly used features of Microsoft Office PowerPoint. It supports various essential element types such as text, images, shapes, lines, charts, tables, videos, audio, and formulas. You can edit and present slides directly in a web browser.
 
 <b>Try it online👉：[https://pipipi-pikachu.github.io/PPTist/](https://pipipi-pikachu.github.io/PPTist/)</b>
 
 # ✨ Highlights
 1. <b>Easy Development</b>: Built with Vue 3.x and TypeScript, it does not rely on UI component libraries and avoids third-party components as much as possible. This makes styling customization easier and functionality extension more convenient.
 2. <b>User Friendly</b>: It offers a context menu available everywhere, dozens of keyboard shortcuts, and countless editing detail optimizations, striving to replicate a desktop application-level experience.
-3. <b>Feature Rich</b>: Supports most of the commonly used elements and functionalities found in PowerPoint, supports generate PPT by AI, supports exporting in various formats, and offers basic editing and previewing on mobile devices.
+3. <b>Feature Rich</b>: Supports most of the commonly used elements and functionalities found in PowerPoint, supports AI-generated PPTs, supports exporting in various formats, and offers basic editing and previewing on mobile devices.
 
 # 👀 Front-Row Reminder
 1. This project is a "Web Slideshow Application", not a "low-code platform", "H5 editor", "image editor", "whiteboard application", or similar tools.
-2. The target audience for this project is <b>developers with needs for [Web slideshow] development, basic web development experience is required</b>. The provided link is merely a demo address and does not offer any online services. You should not use this project directly as a tool, nor does it support out-of-the-box functionality. If you simply need a service or tool, you can opt for more excellent and mature products such as: [Slidev](https://sli.dev/)、[revealjs](https://revealjs.com/), etc.
+2. The target audience for this project is <b>developers with needs for [Web slideshow] development; basic web development experience is required</b>. The provided link is merely a demo address and does not offer any online services. You should not use this project directly as a tool, nor does it support out-of-the-box functionality. If you simply need a service or tool, you can opt for more excellent and mature products such as: [Slidev](https://sli.dev/) or [revealjs](https://revealjs.com/).
 3. Here are some summarized [Frequently Asked Questions](/doc/Q&A.md). When raising Issues or submitting PRs for the first time, be sure to read this document in advance.
-
 
 # 🚀 Installation
 ```
@@ -39,7 +37,6 @@ npm run dev
 Browser access: http://127.0.0.1:5173/
 
 > Note: If you deploy this project on your own server and find that it fails to initialize, it's because the initialization data is stored in the author's private object storage and is not publicly accessible. You'll need to transfer the data to your own server, object storage service, database, or front-end local storage.
-
 
 # 📚 Features
 ### Basic Features
@@ -73,7 +70,7 @@ Browser access: http://127.0.0.1:5173/
 ### Slide Element Editing
 - Add/delete elements
 - Copy/paste elements
-- Drag and move elements
+- Drag to move elements
 - Rotate elements
 - Scale elements
 - Multiple element selection (marquee, point selection)
@@ -171,10 +168,8 @@ Browser access: http://127.0.0.1:5173/
 - Basic preview
 - Play preview
 
-
 # 👀 FAQ
 Some common problems: [FAQ](/doc/Q&A.md)
-
 
 # 🎯 Supplement
 There is currently no complete development documentation, but the following documents may be of some help to you:
@@ -187,49 +182,44 @@ Here are some auxiliary development tools/repositories:
 - Import PPTX file reference: [pptxtojson](https://github.com/pipipi-pikachu/pptxtojson)
 - Draw shape: [svgPathCreator](https://github.com/pipipi-pikachu/svgPathCreator)
 
-
 # 📄 License
 [AGPL-3.0 License](https://github.com/pipipi-pikachu/PPTist/blob/master/LICENSE) | Copyright © 2020-PRESENT [pipipi-pikachu](https://github.com/pipipi-pikachu)
 
 # 🧮 Commercial
-If you wish to use this project for commercial gain, I hope you will respect open source and strictly adhere to the AGPL-3.0 license, giving back to the open source community. Or contact the author for an independent commercial license.
+If you wish to use this project for commercial gain, I hope you will respect open source and strictly adhere to the AGPL-3.0 license, giving back to the open-source community. Or contact the author for an independent commercial license.
 
-
-
-
-
-# 🧮 商业用途
-- 本项目禁止闭源商用，如果你希望将PPTist用于商业项目盈利，请尊重开源，**严格遵循 [AGPL-3.0 协议](https://www.gnu.org/licenses/agpl-3.0.html)**，回馈开源社区（这是作者倡导的）；
-- 如果你因为任何原因，必须要闭源商用，无法执行 AGPL-3.0 协议，可以选择：
-    1. 使用早期的 Apache 2.0 协议版本 [（该版本最后更新时间为2022年5月，目前已停止维护，点击此处可下载代码）](https://github.com/pipipi-pikachu/PPTist/archive/f1a35bb8e045124e37dcafd6acbf40b4531b69aa.zip)；
-    2. 成为项目的重要贡献者（先违反协议后再成为贡献者不在此项范围），包括：
-        - 你的代码被本项目作为依赖引用，包括：npm安装、script/style等文件引用、代码片段引用（引用处会注明）；
-        - 你给本项目提交过重要的 PR 或 Issue（由作者主观判断，符合的 PR 或 Issue 会打上`important contribution`标签）；
-        - 你长期参与到本项目的维护/推进工作中，如为本项目：提供了有效的周边工具、制作了大量模板等（由作者主观判断）；
-    3. [邮件联系作者](mailto:pipipi_pikachu@163.com)付费获取独立的商业授权。独立授权价格：
-        - 一年1999元
-        - 三年2999元
-        - 永久5499元
-        - 违反协议后被作者找到的，不适用于以上价格
-- 建议优先考虑执行AGPL-3.0协议，如希望付费获取独立的商业授权，还请注意：
-    - 独立商业授权的意思是：单独授权您将代码用于商业行为且不必执行 AGPL-3.0 协议；
-    - 仅授权（而不是出售软件或服务），不存在其他“高级版本/付费版本”、不提供任何在线服务、不提供技术支持或技术咨询、不提供定制开发、不提供更多模板、更不提供可直接交付的产品；
-    - 该软件无法开箱即用，至少也需自行接入后端数据读取/存储相关能力。因此，使用本项目需要有最基本的web开发经验（能理解什么是前端&后端、数据从哪来&怎么存、什么是接口、什么是跨域等）；
-    - 授权后，仍禁止将源代码二次售卖、授权、开源或恶意传播；
-    - 授权后，如有需要可提供AIPPT相关后台逻辑和当前模板数据以供参考（但都非常简单，无任何核心逻辑，更建议自己实现）；
-    - 请务必提前做好调研，判断PPTist是否符合需求，无论是功能（是否能满足业务需求）还是开发（是否接受当前技术栈/实现方案）；
-    - 作者没法“提供法律文件来证明我的Github帐号属于我”，如介意这一点，请考虑其他途径；
-    - 不接受[黑名单](/doc/Blacklist.md)对象通过付费获取独立的商业授权或贡献代码；
-    - 作者倡导异步沟通，**不加微信/QQ/手机号等**，有任何授权相关疑问请邮件联系，提需求/报bug/询问技术方案等请在 [Issues](https://github.com/pipipi-pikachu/PPTist/issues) 中进行，谢谢理解。
+# 🧮 Commercial Use
+- This project is prohibited from being used for commercial purposes with its source code closed. If you wish to use PPTist for commercial project profit, please respect open source and **strictly follow the [AGPL-3.0 License](https://www.gnu.org/licenses/agpl-3.0.html)**, giving back to the open-source community (this is advocated by the author);
+- If, for any reason, you must use it for closed-source commercial purposes and cannot comply with the AGPL-3.0 license, you may choose to:
+    1. Use the earlier Apache 2.0 licensed version [ (this version was last updated in May 2022 and is no longer maintained; click here to download the code)](https://github.com/pipipi-pikachu/PPTist/archive/f1a35bb8e045124e37dcafd6acbf40b4531b69aa.zip);
+    2. Become a significant contributor to the project (becoming a contributor after violating the agreement is not included in this option), which includes:
+        - Your code is referenced as a dependency by this project, including: npm installation, script/style file references, code snippet references (references will be noted);
+        - You have submitted important PRs or Issues to this project (judged subjectively by the author; compliant PRs or Issues will be tagged with `important contribution`);
+        - You have been involved in the maintenance/promotion of this project for a long time, such as providing useful auxiliary tools or creating numerous templates for this project (judged subjectively by the author);
+    3. [Contact the author via email](mailto:pipipi_pikachu@163.com) to purchase an independent commercial license. Independent license pricing:
+        - 1999 yuan per year
+        - 2999 yuan for three years
+        - 5499 yuan for permanent use
+        - The above prices do not apply if you are found by the author to have violated the agreement;
+- It is recommended to prioritize compliance with the AGPL-3.0 license. If you wish to purchase an independent commercial license, please note:
+    - An independent commercial license means: authorizing you to use the code for commercial purposes without having to comply with the AGPL-3.0 license;
+    - This is an authorization only (not selling software or services). There are no other "Ngh advanced versions/paid versions," no online services are provided, no technical support or consultation is provided, no custom development is provided, and no directly deliverable products are provided;
+    - This software is not ready to use out of the box. You will need to connect at least your own backend data reading/storage capabilities. Therefore, using this project requires basic web development experience (understanding what frontend & backend are, where data comes from & how it's stored, what an interface is, what cross-domain is, etc.);
+    - After authorization, you are still prohibited from reselling, licensing, open-sourcing, or maliciously distributing the source code;
+    - After authorization, if needed, AI PPT related backend logic and current template data can be provided for reference (but they are very simple, with no core logic, and it is recommended to implement them yourself);
+    - Please conduct thorough research in advance to determine if PPTist meets your requirements, both in terms of functionality (whether it can meet business needs) and development (whether you accept the current technology stack/implementation plan);
+    - The author cannot "provide legal documents to prove that my Github account belongs to me." If you are concerned about this, please consider other options;
+    - Objects on the [blacklist](/doc/Blacklist.md) are not eligible to obtain independent commercial licenses or contribute code through payment;
+    - The author advocates asynchronous communication. **Do not add WeChat/QQ/phone numbers, etc.** For any authorization-related questions, please contact by email. For feature requests/bug reports/technical solution inquiries, please use [Issues](https://github.com/pipipi-pikachu/PPTist/issues). Thank you for your understanding.
 
 ---
-# 🔔 其他说明
-## 什么是 AGPL-3.0 协议
-协议的核心要求用通俗的语言解释如下：
-- **开源义务**：如果你用了 AGPL 的代码，无论你或你的下游怎么使用/修改，都必须把你最终的代码全部完整公开出来（不只是给出修改的部分，也不是说换个框架重写一遍就能和原始代码脱离关系了），并继续以 AGPL 协议开源，保持开源的传染性。
-- **网络服务也要开源**：哪怕你只是用 AGPL 的代码做了一个网站或网络服务，别人通过网络用你的服务时，你也需要遵守上一条**开源义务**。
-- **保留版权声明**：你不能删掉代码里原来的作者信息和许可证声明，得告诉大家这代码是从哪儿来的。
-- **不能加额外限制**：你不能在 AGPL 代码上加一些限制，比如不让别人再分发，或者要求别人付费才能使用代码。
-- **免责声明**：作者不保证代码没有 bug，也不对使用后果负责。
+# 🔔 Other Information
+## What is the AGPL-3.0 License?
+The core requirements of the license, explained in simple terms, are as follows:
+- **Open Source Obligation**: If you use AGPL code, regardless of how you or your downstream users use or modify it, you must fully disclose all your final code and continue to open-source it under the AGPL license, maintaining its contagiousness. This does not mean just providing the modified parts, nor does rewriting the framework disconnect it from the original code.
+- **Network Services Must Also Be Open Source**: Even if you only use AGPL code to build a website or network service, you must comply with the aforementioned **open source obligation** when others use your service via the network.
+- **Retain Copyright Notices**: You cannot delete the original author's information and license declarations in the code; you must inform everyone where the code came from.
+- **No Additional Restrictions**: You cannot add restrictions to AGPL code, such as preventing others from redistributing it or requiring them to pay to use the code.
+- **Disclaimer**: The author does not guarantee that the code is bug-free and is not responsible for the consequences of its use.
 
-详细协议内容见官方文档：[AGPL-3.0 协议](https://www.gnu.org/licenses/agpl-3.0.html)
+For detailed license content, please refer to the official documentation: [AGPL-3.0 License](https://www.gnu.org/licenses/agpl-3.0.html)
