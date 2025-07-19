@@ -4,7 +4,7 @@ import re
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "google/gemini-2.5-flash-lite-preview-06-17"  # Free model
-API_KEY = "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"
+API_KEY = ""
 
 def clean_markdown_escapes(text, original_text):
     """
