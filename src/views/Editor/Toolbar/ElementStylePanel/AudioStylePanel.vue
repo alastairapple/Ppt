@@ -1,5 +1,4 @@
-<template
-  >
+<template>
   <div class="audio-style-panel">
     <div class="row">
       <div style="width: 40%;">Icon Color:</div>
@@ -43,10 +42,10 @@ import { useMainStore, useSlidesStore } from '@/store'
 import type { PPTAudioElement } from '@/types/slides'
 import useHistorySnapshot from '@/hooks/useHistorySnapshot'
 
-import ColorButton from '$/components/ColorButton.vue'
-import ColorPicker from '$/components/ColorPicker/index.vue'
-import Switch from '$/components/Switch.vue'
-import Popover from '$/components/Popover.vue'
+import ColorButton from '@/components/ColorButton.vue'
+import ColorPicker from '@/components/ColorPicker/index.vue'
+import Switch from '@/components/Switch.vue'
+import Popover from '@/components/Popover.vue'
 
 const slidesStore = useSlidesStore()
 const { handleElement } = storeToRefs(useMainStore())
