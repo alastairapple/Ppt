@@ -121,8 +121,8 @@ export default (
 
     // Handles the movement of the element during drag.
     const handleMousemove = (e: MouseEvent | TouchEvent) => {
-      const currentPageX = isTouchEvent ? e.changedTouches[0].pageX : e.pageX
-      const currentPageY = isTouchEvent ? e.changedTouches[0].pageY : e.pageY
+      const currentPageX = isTouchEvent ? (e as TouchEvent).changedTouches[0].pageX : (e as MouseEvent).pageX
+      const currentPageY = isTouchEvent ? (e as TouchEvent).changedTouches[0].pageY : (e as MouseEvent).pageY
 
       // Detect misoperation: if the movement is too small, consider it a misoperation.
       if (isMisoperation !== false) {
@@ -331,8 +331,8 @@ export default (
 
       alignmentLines.value = [] // Clear displayed alignment lines.
 
-      const currentPageX = isTouchEvent ? e.changedTouches[0].pageX : e.pageX
-      const currentPageY = isTouchEvent ? e.changedTouches[0].pageY : e.pageY
+      const currentPageX = isTouchEvent ? (e as TouchEvent).changedTouches[0].pageX : (e as MouseEvent).pageX
+      const currentPageY = isTouchEvent ? (e as TouchEvent).changedTouches[0].pageY : (e as MouseEvent).pageY
 
       // If no movement occurred, do nothing.
       if (startPageX === currentPageX && startPageY === currentPageY) return

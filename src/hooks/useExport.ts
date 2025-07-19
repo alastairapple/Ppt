@@ -89,9 +89,11 @@ export default () => {
 
   // Format color value to transparency + HexString for pptxgenjs
   const formatColor = (_color: string) => {
-    if (!_color) return {
-      alpha: 0,
-      color: '#000000',
+    if (!_color) {
+      return {
+        alpha: 0,
+        color: '#000000',
+      }
     }
 
     const c = tinycolor(_color)

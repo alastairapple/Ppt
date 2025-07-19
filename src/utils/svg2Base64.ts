@@ -49,7 +49,7 @@ const encode = (input: string) => {
 
 export const svg2Base64 = (element: Element) => {
   const XMLS = new XMLSerializer()
-  constSvg = XMLS.serializeToString(element)
+  const svg = XMLS.serializeToString(element)
 
   return PREFIX + encode(svg)
 }

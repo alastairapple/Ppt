@@ -97,7 +97,7 @@ export const useSlidesStore = defineStore('slides', {
           formatedAnimations[formatedAnimations.length - 1] = last
         }
         else if (animation.trigger === 'auto') {
-          const last = formatedAnimations[formaterAnimations.length - 1]
+          const last = formatedAnimations[formatedAnimations.length - 1]
           last.autoNext = true
           formatedAnimations[formatedAnimations.length - 1] = last
           formatedAnimations.push({ animations: [animation], autoNext: false })
