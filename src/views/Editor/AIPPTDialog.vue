@@ -61,6 +61,7 @@
               { label: 'Douao-1.5-lite-32k', value: 'ark-doubao-1.5-lite-32k' },
               { label: 'Doubao-seed-1.6-flash', value: 'ark-doubao-seed-1.6-flash' },
               { label: 'DeepSeek-v3 (Limited)', value: 'openrouter-deepseek-v3' },
+              { label: 'Moonshot Kimi K2 (Free)', value: 'moonshotai/kimi-k2:free' },
             ]"
           />
         </div>
@@ -139,7 +140,7 @@ const selectedTemplate = ref('template_1')
 const loading = ref(false)
 const outlineCreating = ref(false)
 const step = ref<'setup' | 'outline' | 'template'>('setup')
-const model = ref('GLM-4-Flash')
+const model = ref('moonshotai/kimi-k2:free')
 const outlineRef = useTemplateRef<HTMLElement>('outlineRef')
 const inputRef = useTemplateRef<InstanceType<typeof Input>>('inputRef')
 
