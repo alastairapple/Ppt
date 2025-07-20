@@ -53,10 +53,10 @@ export const useSlidesStore = defineStore('slides', {
     viewportSize: 1000, // Base width of the viewport
     viewportRatio: 0.5625, // Viewport ratio, default 16:9
     templates: [
-      { name: 'Red General', id: 'template_1', cover: 'https://asset.pptist.cn/img/template_1.jpg' },
-      { name: 'Blue General', id: 'template_2', cover: 'https://asset.pptist.cn/img/template_2.jpg' },
-      { name: 'Purple General', id: 'template_3', cover: 'https://asset.pptist.cn/img/template_3.jpg' },
-      { name: 'Morandi Color Scheme', id: 'template_4', cover: 'https://asset.pptist.cn/img/template_4.jpg' },
+      { name: 'Red General', id: 'template_1', cover: 'https://aippt.euan.live/img/template_1.jpg' },
+      { name: 'Blue General', id: 'template_2', cover: 'https://aippt.euan.live/img/template_2.jpg' },
+      { name: 'Purple General', id: 'template_3', cover: 'https://aippt.euan.live/img/template_3.jpg' },
+      { name: 'Morandi Color Scheme', id: 'template_4', cover: 'https://aippt.euan.live/img/template_4.jpg' },
     ], // Templates
   }),
 
