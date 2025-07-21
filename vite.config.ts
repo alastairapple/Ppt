@@ -11,14 +11,7 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0',
-    port: 5173,
-    proxy: {
-      '/api': {
-        target: 'https://server.pptist.cn',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      }
-    }
+    port: 5173
   },
   css: {
     preprocessorOptions: {
